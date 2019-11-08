@@ -14,6 +14,7 @@ import javax.persistence.Inheritance;
 
 public class Pessoa implements Identificavel {
 	
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	
