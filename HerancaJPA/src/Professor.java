@@ -1,7 +1,9 @@
+import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
 @Entity
+@DiscriminatorValue(value = "Pr")
 public class Professor implements Identificavel{
 
 	@Id

@@ -1,7 +1,9 @@
+import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
 @Entity
+@DiscriminatorValue(value = "Te")
 public class Tecnico extends Pessoa {
 	
 	@Id
