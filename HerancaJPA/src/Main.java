@@ -1,29 +1,30 @@
 public class Main {
 
 	public static void main(String[] args) {
+		
 		Aluno a = new Aluno();
 		a.setId(1l);
 		a.setNome("Fulano");
 		DAO<Aluno> d = new DAO<Aluno>();
 		d.save(a);
-		
-//		Academico a = new Academico();
-//		try {
-//			a.cadastrarALuno(null, null, null);
-//		} catch (CPFInvalidoException e) {
-//			e.printStackTrace();
-//		}
-//		DAO<Professor> dao = new DAO<Professor>();
-//		Professor p = new Professor();
-//		p.setId(26l);
-//		p.setNome("HugoFF");
-//		dao.save(p);
-//		Professor p2 = new Professor();
-//		p2.setId(28l);
-//		p2.setNome("Hugo");
-//		dao.save(p2);
-//		Professor find = dao.find(Professor.class, 28l);
-//		System.out.println(find.getNome());
 	}
-	
-}
+		Pessoa p = new Pessoa();
+		p.setId(10);
+		p.setCpf(12);
+		p.setNome("Fulano");
+		p.setEmail("");
+		DAO<Pessoa> d1 = new DAO<Pessoa>();
+		d.save(p);
+	}
+		Tecnico t = new Tecnico();
+		t.setId(13);
+		t.setCurso("");
+		DAO<Tecnico> d2 = new DAO<Tecnico>();
+		d.save(t);
+	}
+		Professor prof = new Professor ();
+		prof.setId(14);
+		prof.setCurso("");
+		DAO<Professor> d3 = new DAO<Professor>();
+		d.save(prof);
+	}

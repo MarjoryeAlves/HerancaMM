@@ -8,12 +8,9 @@ import javax.persistence.Id;
 import javax.persistence.Inheritance;
 
 @Entity
-@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
-@DiscriminatorColumn(name = "tipo", length = 1, discriminatorType = DiscriminatorType.STRING)
 @DiscriminatorValue("P")
 
 public class Pessoa implements Identificavel {
-	
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
