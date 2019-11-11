@@ -4,7 +4,7 @@ import javax.persistence.Id;
 
 @Entity
 @DiscriminatorValue(value = "Pr")
-public class Professor implements Identificavel{
+public class Professor extends Pessoa{
 
 	@Id
 	private Long id;
