@@ -4,7 +4,6 @@ import javax.persistence.Id;
 import javax.persistence.PrimaryKeyJoinColumn;
 
 @Entity
-@PrimaryKeyJoinColumn(name="idPessoa")
 public class Professor extends Pessoa{
 
 	@Id
