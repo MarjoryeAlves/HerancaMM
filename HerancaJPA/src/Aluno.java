@@ -1,9 +1,10 @@
 import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.PrimaryKeyJoinColumn;
 
 @Entity
-@DiscriminatorValue(value = "Al")
+@PrimaryKeyJoinColumn(name="idPessoa")
 public class Aluno extends Pessoa {
 
 	@Id
