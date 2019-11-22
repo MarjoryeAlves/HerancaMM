@@ -44,8 +44,34 @@ public class Main {
 			
 		}
 		
+			long inicio2 = System.currentTimeMillis();
+		
+			Pessoa algumnome = pe.find(Pessoa.class, 524l);
+			Aluno outronome = d.find(Aluno.class, 77l);
+			Professor outronome2 = prof.find(Professor.class, 3l);
+			Tecnico outronome3 = t.find(Tecnico.class, 2l);
+		
+			long fim2 = System.currentTimeMillis();
+			System.out.println(fim2-inicio2);
+		
+		
+		
+			long inicio3 = System.currentTimeMillis();
+	
+			pe.remove(algumnome);
+			d.remove(outronome);
+			prof.remove(outronome2);
+			t.remove(outronome3);
+		
+			long fim3 = System.currentTimeMillis();
+			System.out.println(fim3-inicio3);
+		
+		
 		
 	}
 	
-}
+
+	}
+	
+
 		
